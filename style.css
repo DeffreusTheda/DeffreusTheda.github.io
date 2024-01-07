@@ -1,0 +1,225 @@
+body{margin: 0}
+.body {
+    margin-top: 52px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}   
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 9999;
+        text-align: center;
+        margin-right: 0;
+        padding: 3px;
+        display: flex;
+        /* flex-direction: column */
+        /* flex-wrap: wrap/nowrap */
+    }
+        .navbar a {
+            float: left;
+            display: flex;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;;
+            /* flex-grow: 0/1/2/3/... */
+            /* flex-shrink: 0/1/2/3/... */
+        }
+        .navbar a:hover {
+            background: #ddd;
+            color: black;
+        }
+    .title h1 {
+        text-shadow: 2px 1px 10px magenta;
+    }
+    #proker {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        #proker table {
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        }
+        #proker table tr td section h3 {
+            font-weight: 900;
+            text-shadow: 0 0 10px pink;
+        }
+        .two-col table tr td {
+            text-align: center;
+            border-style: ridge;
+            width: 50%;
+            padding-left: 5vw;
+            padding-right: 5vw;
+        }
+    .gambar-dan-text {
+        position: relative;
+        text-align: center;
+        color: white;
+        text-shadow: 0 0 10px white;
+        width: 4000px;
+        max-width: 100%;
+        font-size: 75px;
+    }
+        #foto-diklat {
+            box-shadow: 0 0 10px black;
+        }
+        .image-bottom-left {
+            position: absolute;
+            bottom: 5vw;
+            left: 2vw;
+        }
+        .image-top-left {
+            position: absolute;
+            top: 1vw;
+            left: 1vw;
+        }
+        .image-top-right {
+            position: absolute;
+            top: 1vw;
+            right: 2vw;
+        }
+        .image-bottom-right {
+            position: absolute;
+            bottom: 8px;
+            right: 16px;
+        }
+        .image-center {
+            position: absolute;
+            top: 23vw;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-shadow: 0 0 10px red;
+            font-weight: bolder;
+            height: 5vw;
+            min-width: 300px;
+        }
+            #below-dirandra {
+                font-size: 1.5vw;
+                color: white;
+                text-shadow: 0 0 5px red;
+            }
+    /* #komentar {
+        width: 500px;
+        height: 600px;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        text-wrap: wrap;
+    } */
+    #benefits {
+        margin-left: 10%;
+        margin-right: 10%;
+        border: dashed black;
+        /* background-color: #cdbebe; */
+        text-shadow: 0 0 5px white;
+        /* background-image: url('images/Foto_Diklat.JPG'); */
+        /* background-repeat: no-repeat/repeat; */
+    }
+        .centered {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .centered li {
+            text-align: justify;
+        }
+    .player {
+        background-color: gray;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+        .player video {
+            box-shadow: 0 0 10px black;
+        }
+footer {
+    background-color: #2b333a;
+}
+    .links {
+        font-family: Comic Sans MS, Comic Sans, cursive;
+        margin-left: 10%;
+        margin-right: 10%;
+        color: white;
+    }
+        .links table {
+            width: 100%;
+        }
+            .links table tr td a:hover {
+                background-color: white;
+                color: #2b333a;
+            }
+            .links table tr th {
+                text-align: center;
+                width: 33.333333333333333333%;;
+            }
+            .links table tr td {
+                width: 33.333333333333333333%;
+            }
+                .links table tr td a {
+                    text-decoration: none;
+                    color: white;
+                    margin-left: 10%;
+                }
+        .back-to-top-button {
+            text-align: center;
+        }
+        .back-to-top-button a:hover {
+            color: #2b333a;
+            background-color: red;
+        }
+            .back-to-top-button a {
+                color: red;
+                border: solid;
+                text-decoration: none;
+                padding: 5px;
+            }
+    #copyright-footer {
+        background-color: yellow;
+        text-align: center;
+        width: 100%;
+        height: 50px;
+        border: solid yellow;
+    }
+    #test-div {
+        border: 2px solid red;
+        padding: 5px;
+    }
+        #test {
+            width: 30%;
+            color: red;
+            transition: transform 3s, width 3s, color 3s, translate 3s;
+            transition-delay: 3s;
+
+            animation-name: test-animation;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+            /* or use this shorthand:
+            animation: test-animation 1s linear 5s infinite;
+            */
+        }
+            #test:hover {
+                transform: rotate(180deg) translate(20%);
+                width: 100%;
+                color: yellow;
+            }  
+            @keyframes test-animation {
+                0% {background-color: red;}
+                33% {background-color: blue;}
+                67% {background-color: yellow;}
+                100% {background-color: green;}
+            }
+            /* or, you can use this if you only have 2 frames:
+            @keyframe test-animation {
+                from {background-color: white;} // from equal to 0%
+                to {background-color: black;} // to equal to 100%
+            }
+            */
